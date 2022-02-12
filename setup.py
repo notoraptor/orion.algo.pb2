@@ -21,16 +21,14 @@ setup_args = dict(
         os.path.join(repo_root, "README.rst"), "rt", encoding="utf8"
     ).read(),
     license="BSD-3-Clause",
-    author=u"Epistimio",
+    author="Epistimio",
     author_email="xavier.bouthillier@mila.quebec",
     url="https://github.com/Epistimio/orion.algo.pb2",
     packages=["orion.algo.pb2"],
     package_dir={"": "src"},
     include_package_data=True,
     entry_points={
-        "BaseAlgorithm": [
-            "pb2_PB2 = orion.algo.pb2.pb2:PB2"
-        ],
+        "BaseAlgorithm": ["pb2_PB2 = orion.algo.pb2.pb2:PB2"],
     },
     install_requires=["orion>=0.1.15", "numpy"],
     tests_require=tests_require,
